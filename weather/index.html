@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <head>
     <link href="styles.css" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="weatherAPI.js"></script>
     <title>Today's Forecast - Weather App</title>
 </head>
 <div class="container">
@@ -8,9 +10,21 @@
     <div class="middle">
         <img src="" alt="icon" id="icon">
         <div class="degrees">
-            <h1 id=temp">19</h1>
+            <h1 id="temp">19</h1>
             <span>&#176;</span>
         </div>
-        <h3 id="desc">Sunny</h3>
+        <div>
+            <h3>Feels Like: <h3> </h3> 
+                <h3 id="feels"> 13 </h3> 
+                &#176;
+            </h3>
+        </div>
+        <div>
+            <h3>Humidity: <h3> </h3> 
+                <h3 id="humidity">32</h3> 
+                %
+            </h3>
+        </div>
+        <h3 id="desc">Cloudy</h3>
     </div>
  </div>
