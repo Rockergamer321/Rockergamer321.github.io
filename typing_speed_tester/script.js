@@ -1,8 +1,10 @@
 const testWrapper = document.querySelector(".test-wrapper");
 const testArea = document.querySelector("#test-area");
-const originText = document.querySelector("#origin-text p").innerHTML;
+var originText = document.querySelector("#origin-text p");
 const resetButton = document.querySelector("#reset");
 const theTimer = document.querySelector(".timer");
+
+originText = originText.innerHTML;
 
 var timer = [0,0,0,0];
 var interval;
