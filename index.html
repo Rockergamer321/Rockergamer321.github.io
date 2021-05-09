@@ -4,88 +4,73 @@
     <title>CS355 Home Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-      body {
-        margin: 0;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-
-      .topnav {
-        overflow: hidden;
-        background-color: #333;
-      }
-
-      .topnav a {
-        float: left;
-        display: block;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-      }
-
-      .topnav a:hover {
-        background-color: #ddd;
-        color: black;
-      }
-
-      .topnav a.active {
-        background-color: #4CAF50;
-        color: white;
-      }
-
-      .topnav .icon {
-        display: none;
-      }
-
-      @media screen and (max-width: 600px) {
-        .topnav a:not(:first-child) {display: none;}
-        .topnav a.icon {
-          float: right;
-          display: block;
-        }
-      }
-
-      @media screen and (max-width: 600px) {
-        .topnav.responsive {position: relative;}
-        .topnav.responsive .icon {
-          position: absolute;
-          right: 0;
-          top: 0;
-        }
-        .topnav.responsive a {
-          float: none;
-          display: block;
-          text-align: left;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navigation-style.css">
+    <script src="script.js"></script>
   </head>
-  
   <body>
     <div class="topnav" id="myTopnav">
       <a href="index.html" class="active">Home</a>
-      <a href="../weather/index.html">Weather App</a>
-      <a href="../css_linkedin_project/index.html">CSS Project</a>
+      <a href="weather/index.html">Weather App</a>
+      <a href="css_portfolio/index.html">CSS Portfolio</a>
+      <a href="clock/index.html">Functional Clock</a>
+      <a href="typing_speed_tester/index.html">Typing Speed Test</a>
+      <a href="live_search/index.html">Live Search Page</a>
+      <a href="HPlusSport/index.html">Sports Page</a>
+      <a href="chat_app/index.html">Online Chat Application</a>
+      <a href="shopper/server/views/index.pug">Shopping Website</a>
+      <a href="boilerplate-mongomongoose/views/index.html">MongoDB and Mongoose</a>
+      <a href="boilerplate-project-timestamp/views/index.html">Timestamp</a>
+      <a href="boilerplate-project-headerparser/views/index.html">Request Header Parser</a>
+      <a href="boilerplate-project-urlshortener/views/index.html">URL Shortener</a>
+      <a href="boilerplate-project-exercisetracker/views/index.html">Exercise Tracker</a>
+      <a href="boilerplate-project-filemetadata/views/index.html">File Metadata</a>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
       </a>
     </div>
 
-    <h1>Hello, I am Anthony Lombardo</h1>
-    <h1>Welcome to my home page for CS355</h1>
-    
-    <script>
-      function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
-        } 
-        else {
-          x.className = "topnav";
-        }
-      }
-    </script>
+    <h1>Anthony Lombardo - CS355 Home Page</h1>
+    <h2>About Myself</h2>
+    <h3>If the heading wasn't enough to tell you who I am, allow me to fully introduce myself</h3>
+    <p>My name is Anthony Lombardo. I am a fourth year student attending Queens College who is in the pursuit of getting a Computer Science BA. <br>
+      Throughout these four years, I've learned the building blocks when it comes to 
+      writing proficient code, mainly in Java. <br>
+      This semester, however, I've gained the skills necessary to achieve a potential career as a full-stack developer by creating web-based applications using HTML, CSS, and JavaScript (Node, jQuery, AJAX) as well as Github and Databases (MySQL, Redis, MongoDB). <br>
+      I hope my skills will take me far in this field and I'm glad this semester has taught me to never stop learning because you will never know what you are capable of creating until you learn about the proper tools at your disposal.</p>
+    <h2>My Skills</h2>
+    <ul>
+      <li>Possesses a Good Understanding of Data Structures and Algorithms</li>
+      <li>Intermediate knowledge of Java</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript (JS)</li>
+      <li>SQL</li>
+      <li>Github</li>
+    </ul>
+    <h2>Projects</h2>
+    <div class="project-links">
+      <ul>
+        <li><a href="weather/index.html">Weather App</a></li>
+        <li><a href="css_linkedin_project/index.html">CSS Portfolio</a></li>
+        <li><a href="clock/index.html">Functional Clock</a></li>
+        <li><a href="typing_speed_tester/index.html">Typing Speed Test</a></li>
+        <li><a href="live_search/index.html">Live Search Page (Coded with AJAX)</a></li>
+        <li><a href="HPlusSport/index.html">Sports Page (Coded Product Section with JQuery)</a></li>
+        <li><a href="chat_app/index.html">Online Chat Application (Coded with Node.js)</a></li>
+        <li><a href="shopper/server/views/index.pug">Shopping Website (Coded with Node.js and Databases)</a></li>
+      </ul>
+    </div>
+    <h2>freeCodeCamp Projects</h2>
+    <div class="project-links">
+      <ul>
+        <li><a href="boilerplate-mongomongoose/views/index.html">MongoDB and Mongoose</a></li>
+        <li><a href="boilerplate-project-timestamp/views/index.html">Timestamp</a></li>
+        <li><a href="boilerplate-project-headerparser/views/index.html">Request Header Parser</a></li>
+        <li><a href="boilerplate-project-urlshortener/views/index.html">URL Shortener</a></li>
+        <li><a href="boilerplate-project-exercisetracker/views/index.html">Exercise Tracker</a></li>
+        <li><a href="boilerplate-project-filemetadata/views/index.html">File Metadata</a></li>
+      </ul>
+    </div>
   </body>
 </html>

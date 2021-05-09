@@ -1,13 +1,40 @@
 <!DOCTYPE html>
 <head>
-    <link href="https://rockergamer321.github.io/weather/styles.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="../navigation-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../script.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://rockergamer321.github.io/weather/weatherAPI.js"></script>
+    <script src="weatherAPI.js"></script>
     <title>Today's Forecast - Weather App</title>
 </head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="../index.html">Home</a>
+        <a href="index.html" class="active">Weather App</a>
+        <a href="../css_portfolio/index.html">CSS Portfolio</a>
+        <a href="../clock/index.html">Functional Clock</a>
+        <a href="../typing_speed_tester/index.html">Typing Speed Test</a>
+        <a href="../live_search/index.html">Live Search Page</a>
+        <a href="../HPlusSport/index.html">Sports Page</a>
+        <a href="../chat_app/index.html">Online Chat Application</a>
+        <a href="../shopper/server/views/index.pug">Shopping Website</a>
+        <a href="../boilerplate-mongomongoose/views/index.html">MongoDB and Mongoose</a>
+        <a href="../boilerplate-project-timestamp/views/index.html">Timestamp</a>
+        <a href="../boilerplate-project-headerparser/views/index.html">Request Header Parser</a>
+        <a href="../boilerplate-project-urlshortener/views/index.html">URL Shortener</a>
+        <a href="../boilerplate-project-exercisetracker/views/index.html">Exercise Tracker</a>
+        <a href="../boilerplate-project-filemetadata/views/index.html">File Metadata</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    <h2>Basic Weather Application</h2>
+
 <div class="container">
-    <h2 id="city">Leeds</h2>
     <div class="middle">
+        <h2 id="city">Leeds</h2>
+        <h2 id="country"></h2>
         <img src="" alt="icon" id="icon">
         <div class="degrees">
             <h1 id="temp">19</h1>
@@ -28,3 +55,4 @@
         <h3 id="desc">Cloudy</h3>
     </div>
  </div>
+</body>

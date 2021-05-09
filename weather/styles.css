@@ -1,5 +1,13 @@
 h1, h2, h3, span{
     margin: 0;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+body {
+    background-color: skyblue;
+    margin: 0;
+    margin-bottom: 8px;
 }
 
 h1{
@@ -8,6 +16,7 @@ h1{
 
 h2{
     font-size: 3rem;
+    height: 60px;
 }
 
 h3{
@@ -21,7 +30,7 @@ span{
 
 .container{
     max-width: 550px;
-    height: 100vh;
+    height: 600px;
     border: 1px solid black;
     margin: 0 auto;
     display: grid;
