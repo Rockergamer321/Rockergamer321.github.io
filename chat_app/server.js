@@ -4,6 +4,7 @@ var app = express()
 var http = require('http').Server(app)
 var io = require('socket.io')(http)
 var mongoose = require('mongoose')
+var PORT = process.env.PORT || 3000;
 
 app.use(express.static(__dirname))
 app.use(bodyParser.json())
@@ -64,6 +65,6 @@ mongoose.connect(dbUrl, (err) => {
     console.log('mongo db connection', err)
 })
 
-var server = http.listen(3000, () => {
+var server = http.listen(PORT, () => {
     console.log('server is listening on port', server.address().port)
 })
