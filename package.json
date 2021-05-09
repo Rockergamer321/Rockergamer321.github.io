@@ -1,0 +1,20 @@
+{
+  "name": "cs355lombardo",
+  "version": "1.0.0",
+  "description": "My course dashboard showcases all of the projects that I have completed throughout Spring 2021. The main page consists of a small bio and links to my LinkedIn Projects, freeCodeCamp Projects (I'm not sure about one of them), and my Term Project (QCFirst). There's also a dropdown navigation menu at the head of each page where each option directs itself to the chosen project. This dropdown navigation menu is also located at the head of each project page, except the term project.\r # Link to Website:",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rockergamer321/cs355lombardo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rockergamer321/cs355lombardo/issues"
+  },
+  "homepage": "https://github.com/Rockergamer321/cs355lombardo#readme"
+}
